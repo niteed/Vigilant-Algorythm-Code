@@ -1,0 +1,38 @@
+  <html>
+  <head>
+    <title>Result</title>
+  </head>
+  <body>
+    <div class ="header">
+      <h1 id="heading"><marquee width="80%"direction="right" ><b>Final Result</marquee></b></h1>
+    </div>
+    {% if got_result %}
+    {% for k,v in result.items() %}
+    <p>
+      {{ k }} : {{ v }}
+    </p>
+    {% endfor %}
+
+    <p>{{ sms_status }}</p>
+
+    {% for k,v in ride_result.items() %}
+    <p>
+      {{ k }} : {{ v }}
+    </p>
+    {% endfor %}
+    
+    {% endif %}
+
+    <style>
+      #heading{
+  margin: 20px;
+  text-align: centre;
+  color:Blue;
+}
+      .header{
+    background: #ffff99
+}
+
+    </style>
+  </body>
+</html>

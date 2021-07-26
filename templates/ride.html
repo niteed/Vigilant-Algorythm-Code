@@ -1,0 +1,25 @@
+  <html>
+  <head>
+    <title>Result</title>
+  </head>
+  <body>
+    <div class ="header">
+      <h1 id="heading"><marquee width="80%"direction="right" ><b>Final Result</marquee></b></h1>
+    </div>
+    <form action="{{url_for('show_result')}}" method="POST">
+      <button type="submit">Show Result</button>
+    </form>
+
+    <style>
+      #heading{
+  margin: 20px;
+  text-align: centre;
+  color:Blue;
+}
+      .header{
+    background: #ffff99
+}
+
+    </style>
+  </body>
+</html>

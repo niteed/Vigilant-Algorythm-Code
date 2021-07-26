@@ -1,0 +1,29 @@
+  <html>
+  <head>
+    <title>Video Streaming Demonstration</title>
+  </head>
+  <body>
+    <div class ="header">
+      <h1 id="heading"><marquee width="80%"direction="right" ><b>Video Streaming Demonstration</marquee></b></h1>
+    </div>
+    
+    <img id="bg" src="{{ url_for('video_feed') }}">    
+
+    <form action="{{url_for('ride_end')}}" method="POST">
+      <button type="submit">End Ride</button>
+    </form>
+
+    </form>
+    <style>
+      #heading{
+  margin: 20px;
+  text-align: centre;
+  color:Blue;
+}
+      .header{
+    background: #ffff99
+}
+
+    </style>
+  </body>
+</html>
